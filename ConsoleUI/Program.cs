@@ -1,5 +1,6 @@
 ﻿using Business.Concrete;
 using DataAccess.Concrete;
+using DataAccess.Concrete.InMemory;
 using System;
 
 namespace ConsoleUI
@@ -11,7 +12,7 @@ namespace ConsoleUI
             CarManager carManager = new CarManager(new InMemoryCarDal());
             foreach (var car in carManager.GetAll())
             {
-                Console.WriteLine(car.Description+" "+"Günlük Fiyatı : "+car.DailyPrice);
+                Console.WriteLine(car.Description+" "+car.DailyPrice);
             }
         }
     }
