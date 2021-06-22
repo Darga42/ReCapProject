@@ -21,16 +21,19 @@ namespace Business.Concrete
         public void Add(Brand brand)
         {
             _brandDal.Add(brand);
+            Console.WriteLine("Marka Eklendi");
         }
 
         public void Delete(Brand brand)
         {
             _brandDal.Delete(brand);
+            Console.WriteLine("Marka Silindi");
         }
 
         public void Update(Brand brand)
         {
             _brandDal.Update(brand);
+            Console.WriteLine("Marka Güncellendi");
         }
     }
 }

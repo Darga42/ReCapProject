@@ -21,16 +21,19 @@ namespace Business.Concrete
         public void Add(Color color)
         {
             _colorDal.Add(color);
+            Console.WriteLine("Renk Eklendi");
         }
 
         public void Delete(Color color)
         {
             _colorDal.Delete(color);
+            Console.WriteLine("Renk Silindi");
         }
 
         public void Update(Color color)
         {
             _colorDal.Update(color);
+            Console.WriteLine("Renk Güncellendi");
         }
     }
 }
