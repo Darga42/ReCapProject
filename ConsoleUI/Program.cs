@@ -15,7 +15,7 @@ namespace ConsoleUI
             //ColorTest();
             //BrandTest();
             var carManager = new CarManager(new EfCarDal());
-            foreach (var car in carManager.GetCarDetails())
+            foreach (var car in carManager.GetCarDetails().Data)
             {
                 Console.WriteLine($"Model:{car.CarName} - Brand:{car.BrandName} - Color:{car.ColorName} - DailyPrice:{car.DailyPrice}");
             }
